@@ -60,7 +60,7 @@ import Header from '@/components/layouts/Header.vue';
                         </button>
                         <a
                             href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                            class="inline-flex gap-3 rounded-lg border border-b-gray-200 bg-white/10 p-4 px-7 text-white antialiased"
+                            class="inline-flex gap-3 rounded-lg border border-gray-200 bg-white/10 p-4 px-7 text-white antialiased"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
