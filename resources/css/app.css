@@ -59,7 +59,51 @@
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
+
+    --color-lp-background: var(--lp-background);
+    --color-lp-foreground: var(--lp-foreground);
+
+    --color-lp-card: var(--lp-card);
+    --color-lp-card-foreground: var(--lp-card-foreground);
+
+    --color-lp-popover: var(--lp-popover);
+    --color-lp-popover-foreground: var(--lp-popover-foreground);
+
+    --color-lp-primary: var(--lp-primary);
+    --color-lp-primary-foreground: var(--lp-primary-foreground);
+
+    --color-lp-secondary: var(--lp-secondary);
+    --color-lp-secondary-foreground: var(--lp-secondary-foreground);
+
+    --color-lp-muted: var(--lp-muted);
+    --color-lp-muted-foreground: var(--lp-muted-foreground);
+
+    --color-lp-accent: var(--lp-accent);
+    --color-lp-accent-foreground: var(--lp-accent-foreground);
+
+    --color-lp-destructive: var(--lp-destructive);
+    --color-lp-destructive-foreground: var(--lp-destructive-foreground);
+
+    --color-lp-border: var(--lp-border);
+    --color-lp-input: var(--lp-input);
+    --color-lp-ring: var(--lp-ring);
+
+    --color-lp-chart-1: var(--lp-chart-1);
+    --color-lp-chart-2: var(--lp-chart-2);
+    --color-lp-chart-3: var(--lp-chart-3);
+    --color-lp-chart-4: var(--lp-chart-4);
+    --color-lp-chart-5: var(--lp-chart-5);
+
+    --color-lp-sidebar: var(--lp-sidebar-background);
+    --color-lp-sidebar-foreground: var(--lp-sidebar-foreground);
+    --color-lp-sidebar-primary: var(--lp-sidebar-primary);
+    --color-lp-sidebar-primary-foreground: var(--lp-sidebar-primary-foreground);
+    --color-lp-sidebar-accent: var(--lp-sidebar-accent);
+    --color-lp-sidebar-accent-foreground: var(--lp-sidebar-accent-foreground);
+    --color-lp-sidebar-border: var(--lp-sidebar-border);
+    --color-lp-sidebar-ring: var(--lp-sidebar-ring);
 }
+
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
@@ -124,6 +168,54 @@
     --sidebar-border: hsl(0 0% 91%);
     --sidebar-ring: hsl(217.2 91.2% 59.8%);
     --sidebar: hsl(0 0% 98%);
+    --lp-primary: hsl(210, 36%, 10%);
+
+    /* ===== Landing Page Theme (Light Base) ===== */
+
+    --lp-background: hsl(210 45% 10%);
+    --lp-foreground: hsl(210 40% 96%);
+
+    --lp-card: hsl(210 45% 14%);
+    --lp-card-foreground: hsl(210 40% 96%);
+
+    --lp-popover: hsl(210 45% 14%);
+    --lp-popover-foreground: hsl(210 40% 96%);
+
+    --lp-primary: hsl(213 100% 60%);
+    --lp-primary-foreground: hsl(0 0% 100%);
+
+    --lp-secondary: hsl(210 40% 18%);
+    --lp-secondary-foreground: hsl(210 35% 92%);
+
+    --lp-muted: hsl(210 35% 16%);
+    --lp-muted-foreground: hsl(210 20% 70%);
+
+    --lp-accent: hsl(210 40% 20%);
+    --lp-accent-foreground: hsl(210 40% 96%);
+
+    --lp-destructive: hsl(0 75% 55%);
+    --lp-destructive-foreground: hsl(0 0% 98%);
+
+    --lp-border: hsl(210 30% 22%);
+    --lp-input: hsl(210 30% 22%);
+    --lp-ring: hsl(213 100% 60%);
+
+    /* Chart Colors */
+    --lp-chart-1: hsl(213 100% 60%);
+    --lp-chart-2: hsl(200 90% 55%);
+    --lp-chart-3: hsl(190 80% 50%);
+    --lp-chart-4: hsl(220 70% 65%);
+    --lp-chart-5: hsl(180 75% 45%);
+
+    /* Sidebar */
+    --lp-sidebar-background: hsl(210 50% 9%);
+    --lp-sidebar-foreground: hsl(210 35% 92%);
+    --lp-sidebar-primary: hsl(213 100% 60%);
+    --lp-sidebar-primary-foreground: hsl(0 0% 100%);
+    --lp-sidebar-accent: hsl(210 35% 18%);
+    --lp-sidebar-accent-foreground: hsl(210 40% 96%);
+    --lp-sidebar-border: hsl(210 30% 20%);
+    --lp-sidebar-ring: hsl(213 100% 60%);
 }
 
 .dark {
@@ -160,6 +252,49 @@
     --sidebar-border: hsl(0 0% 15.9%);
     --sidebar-ring: hsl(217.2 91.2% 59.8%);
     --sidebar: hsl(240 5.9% 10%);
+
+    --lp-background: hsl(210 50% 8%);
+    --lp-foreground: hsl(210 40% 96%);
+
+    --lp-card: hsl(210 50% 12%);
+    --lp-card-foreground: hsl(210 40% 96%);
+
+    --lp-popover: hsl(210 50% 12%);
+    --lp-popover-foreground: hsl(210 40% 96%);
+
+    --lp-primary: hsl(213 100% 62%);
+    --lp-primary-foreground: hsl(0 0% 100%);
+
+    --lp-secondary: hsl(210 45% 14%);
+    --lp-secondary-foreground: hsl(210 35% 95%);
+
+    --lp-muted: hsl(210 35% 14%);
+    --lp-muted-foreground: hsl(210 25% 72%);
+
+    --lp-accent: hsl(210 45% 16%);
+    --lp-accent-foreground: hsl(210 40% 96%);
+
+    --lp-destructive: hsl(0 75% 60%);
+    --lp-destructive-foreground: hsl(0 0% 98%);
+
+    --lp-border: hsl(210 30% 18%);
+    --lp-input: hsl(210 30% 18%);
+    --lp-ring: hsl(213 100% 62%);
+
+    --lp-chart-1: hsl(213 100% 62%);
+    --lp-chart-2: hsl(200 90% 58%);
+    --lp-chart-3: hsl(190 80% 55%);
+    --lp-chart-4: hsl(220 70% 68%);
+    --lp-chart-5: hsl(180 75% 48%);
+
+    --lp-sidebar-background: hsl(210 55% 7%);
+    --lp-sidebar-foreground: hsl(210 35% 95%);
+    --lp-sidebar-primary: hsl(213 100% 62%);
+    --lp-sidebar-primary-foreground: hsl(0 0% 100%);
+    --lp-sidebar-accent: hsl(210 35% 14%);
+    --lp-sidebar-accent-foreground: hsl(210 40% 96%);
+    --lp-sidebar-border: hsl(210 30% 16%);
+    --lp-sidebar-ring: hsl(213 100% 62%);
 }
 
 @layer base {

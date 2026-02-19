@@ -12,7 +12,7 @@ Route::post('register', [\App\Http\Controllers\Auth\RegisterUserController::clas
 
 // HOME PAGE
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
+    return Inertia::render('landing/Main', [
         'canRegister' => Features::enabled(Features::registration()),
     ]);
 })->name('home');
