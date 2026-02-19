@@ -11,7 +11,7 @@ import Header from '@/components/layouts/Header.vue';
 
             <div class="flex w-full items-center justify-center">
                 <div
-                    class="container flex min-h-screen flex-col items-center py-20"
+                    class="container flex min-h-screen flex-col items-center pt-5 pb-20"
                 >
                     <div
                         class="mb-5 flex max-w-128 animate-pulse items-center justify-center gap-4 self-center rounded-full border border-lp-primary bg-transparent px-5 py-2 text-white"
