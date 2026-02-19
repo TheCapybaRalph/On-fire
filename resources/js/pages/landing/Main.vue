@@ -5,7 +5,7 @@ import MainLandingPage from '@/components/content/landing/MainLandingPage.vue';
 
 <template>
     <div class="bg-lp-background">
-        <div class="bg-radial from-sky-900 to-[#101922] to-70%">
+        <div class="bg-radial from-sky-900 to-lp-background to-70%">
             <div class="pt-3">
                 <Header />
             </div>
