@@ -9,4 +9,5 @@ Artisan::command('inspire', function () {
 
 
 \Illuminate\Support\Facades\Schedule::job(\App\Jobs\VisitorManagerJob::class)
-    ->everyMinute();
+   ->everyMinute();
+

@@ -51,7 +51,7 @@
                     </svg>
                 </button>
                 <a
-                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    href="#"
                     class="inline-flex gap-3 rounded-lg border border-gray-200 bg-white/10 p-4 px-7 text-white antialiased"
                 >
                     <svg

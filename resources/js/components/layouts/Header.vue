@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Link, router } from '@inertiajs/vue3';
+import { login, register } from '@/routes';
+</script>
 
 <template>
     <div class="flex w-full px-2 sm:px-5">
@@ -47,14 +50,13 @@
             <div
                 class="account-actions flex items-center gap-8 font-medium text-white"
             >
-                <a href="">Login</a>
+                <Link :href="login()">Login</Link>
                 <div class="group relative cursor-pointer">
                     <div
                         class="absolute inset-0 scale-95 rounded-xl bg-blue-500 opacity-0 blur transition-all duration-300 group-hover:scale-100 group-hover:opacity-70"
                     ></div>
-                    <a
-                        class="relative rounded-xl bg-[#0D7FF2] p-2 px-5"
-                        >Start Monitoring</a
+                    <Link :href="register()" class="relative rounded-xl bg-[#0D7FF2] p-2 px-5"
+                        >Start Monitoring</Link
                     >
                 </div>
             </div>

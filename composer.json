@@ -16,7 +16,8 @@
         "laravel/horizon": "^5.41",
         "laravel/telescope": "^5.16",
         "laravel/tinker": "^2.10.1",
-        "laravel/wayfinder": "^0.1.9"
+        "laravel/wayfinder": "^0.1.9",
+        "thecapybaralph/laravel-uhoh": "^1.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
