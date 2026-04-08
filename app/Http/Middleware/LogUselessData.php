@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Context;
 use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -23,6 +24,12 @@ class LogUselessData
 
         Log::withContext([
             'from_within' => true
+        ]);
+
+        Context::add('feature_flags', [
+            'request_ip' => $request->ip(),
+            'user_agent' => $request->userAgent(),
+            'from_context' => true
         ]);
 
         return $next($request);
