@@ -9,6 +9,7 @@ use App\Models\VisitRecord;
 use App\Models\VisitRecordPayload;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Client\Response;
+use Illuminate\Support\Facades\Log;
 
 class VisitorService
 {
@@ -27,6 +28,12 @@ class VisitorService
 
     public function processVisitUpdate(SitePage $page, Response $response)
     {
+        Log::withContext([
+            'pagekey' => $page->getKey(),
+            'response' => $response->status()
+        ]);
+
+        info("PAGE LOG: " . $page->getKey());
         if(empty($page)) return;
 
         if(in_array($response->getStatusCode(), $page->expected_status)) {

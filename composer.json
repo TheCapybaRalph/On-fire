@@ -13,9 +13,9 @@
         "inertiajs/inertia-laravel": "^2.0",
         "laravel/fortify": "^1.30",
         "laravel/framework": "^12.0",
-        "laravel/horizon": "^5.41",
         "laravel/telescope": "^5.16",
         "laravel/tinker": "^2.10.1",
+        "laravel/vapor-core": "^2.43",
         "laravel/wayfinder": "^0.1.9",
         "thecapybaralph/laravel-uhoh": "^1.0"
     },

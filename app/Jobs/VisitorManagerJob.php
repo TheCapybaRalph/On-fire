@@ -11,6 +11,7 @@ use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Http\Client\Pool;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 /**
  * We check if the page is on fire, we notify the users right away
@@ -39,9 +40,17 @@ class VisitorManagerJob implements ShouldQueue
                 $this->visitor->processVisitUpdate($page, $response);
             })
             ->finally(function(Batch $batch, array $results) {
+                Log::withContext([
+                    'completed' => $batch->finishedAt,
+                    'total' => $batch->totalRequests,
+                    'failed' => $batch->failedRequests
+                ]);
                 info("BATCH HAS BEEN COMPLETED: $batch->finishedAt");
-                info("TOTAL REQUEST: $batch->totalRequests");
-                info("FAILED REQUEST: $batch->failedRequests");
+            })
+            ->catch(function(Batch $batch, int|string $key, Response $response) use ($pages) {
+                info("Catching: $key");
+                $page = $pages->where('id', $key)->first();
+                $this->visitor->processVisitUpdate($page, $response);
             })
             ->concurrency(20)
             ->send();
