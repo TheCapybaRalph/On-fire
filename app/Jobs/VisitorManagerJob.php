@@ -70,7 +70,7 @@ class VisitorManagerJob implements ShouldQueue
                 ->when(! $page->verify_ssl, function(PendingRequest $b) { $b->withoutVerifying(); })
                 ->timeout($page->timeout_seconds)
                 ->retry($page->retries, 250)
-                ->withHeaders($page->headers)
+                ->withHeaders($page->headers ?? [])
                 ->when($page->authorization_type == 'bearer', function(PendingRequest $b) use ($page) {
                     $b->withToken(data_get($page, 'authorization_payload.token'));
                 })
