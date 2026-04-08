@@ -32,6 +32,7 @@ class LogUselessData
             'from_context' => true
         ]);
 
+        info("AM I READING?");
         return $next($request);
     }
 }
