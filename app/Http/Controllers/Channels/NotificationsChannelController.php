@@ -29,6 +29,8 @@ class NotificationsChannelController extends Controller
             ];
         })->all();
 
+        info("READING INMTO THIS");
+
         return Inertia::render('channels/Index', [
             'channels' => $data,
         ]);
