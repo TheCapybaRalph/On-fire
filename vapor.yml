@@ -1,18 +1,17 @@
-id: 75200
-name: onfiremonitoring
+id: 75225
+name: jett-revive-me
 environments:
   production:
-    storage: staging-bucket-hahaha
     memory: 1024
     cli-memory: 512
-    database: pg-prod-db
-    cache: "Cachero"
+    database: pgqq
+    cache: cachi
     runtime: docker
     docker-build-options:
       - provenance=false
     build:
-      - 'composer install --no-dev'
-      - 'php artisan event:cache'
+      - 'herd composer install --no-dev'
+      - 'herd php artisan event:cache'
       - 'npm i && npm run build'
     deploy:
       - 'php artisan migrate --force'
