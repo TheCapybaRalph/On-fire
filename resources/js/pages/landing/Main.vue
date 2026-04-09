@@ -16,7 +16,9 @@ import StatSwiper from '@/components/content/landing/StatSwiper.vue';
         </div>
         <FeatureShowoff/>
         <StatSwiper/>
-        <div class="min-h-screen"></div>
+        <div class="min-h-screen">
+            <img src="/images/aws.webp" alt="Wo">
+        </div>
     </div>
 </template>
 
