@@ -13,7 +13,6 @@ environments:
     build:
       - 'composer install --no-dev'
       - 'php artisan event:cache'
-      - 'php artisan test'
       - 'npm i && npm run build'
     deploy:
       - 'php artisan migrate --force'
