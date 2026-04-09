@@ -2,6 +2,7 @@
 import Header from '@/components/layouts/Header.vue';
 import MainLandingPage from '@/components/content/landing/MainLandingPage.vue';
 import FeatureShowoff from '@/components/content/landing/FeatureShowoff.vue';
+
 import StatSwiper from '@/components/content/landing/StatSwiper.vue';
 </script>
 
@@ -14,11 +15,8 @@ import StatSwiper from '@/components/content/landing/StatSwiper.vue';
 
             <MainLandingPage></MainLandingPage>
         </div>
-        <FeatureShowoff/>
-        <StatSwiper/>
-        <div class="min-h-screen">
-            <img src="/images/aws.webp" alt="Wo">
-        </div>
+        <FeatureShowoff />
+        <StatSwiper />
     </div>
 </template>
 
