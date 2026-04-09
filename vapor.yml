@@ -10,8 +10,7 @@ environments:
     docker-build-options:
       - provenance=false
     build:
-      - 'herd composer install --no-dev'
-      - 'herd php artisan event:cache'
-      - 'npm i && npm run build'
+      - 'composer install --no-dev'
+      - 'php artisan event:cache'
     deploy:
       - 'php artisan migrate --force'
