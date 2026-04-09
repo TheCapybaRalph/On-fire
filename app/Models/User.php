@@ -57,7 +57,7 @@ class User extends Authenticatable
 
     public function isOnboarded(): bool
     {
-        return $this->onboarded;
+        return (bool)$this->onboarded;
     }
 
     /**
